@@ -1,9 +1,11 @@
 <template>
-  <div class="bg-base-100 mb-3 p-1">
-    <span>I`m parential component</span>
-    <lol />
+  <div>
+    <div class="bg-base-100 mb-3 p-1">
+      <span>I`m parential component</span>
+      <lol />
+    </div>
+    <RecursiveComponent :content="obj" />
   </div>
-  <RecursiveComponent :content="obj" />
 </template>
 
 <script setup>
@@ -19,7 +21,7 @@ const obj = {
     1: "kek",
     "omg": {
       "oof": [1, 64, 34],
-      9: "azaza"
+      "joe": "azaza"
     }
   }
 };

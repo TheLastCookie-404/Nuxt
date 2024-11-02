@@ -8,6 +8,8 @@
       <NuxtLink class="link link-primary" to="/nestedarrparse">To Nested array parse</NuxtLink>
       <br/>
       <NuxtLink class="link link-primary" to="/componenttesting">To Component testing</NuxtLink>
+      <br/>
+      <NuxtLink class="link link-primary" to="/options">To Options</NuxtLink>
     </p>
   </div>
 </template>
@@ -15,3 +17,4 @@
 <script setup>
 const route = useRoute();
 </script>
+

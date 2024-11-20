@@ -5,6 +5,10 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: './src',
 
+  typescript: {
+    typeCheck: true
+  },
+
   postcss: {
     plugins: {
       tailwindcss: {},

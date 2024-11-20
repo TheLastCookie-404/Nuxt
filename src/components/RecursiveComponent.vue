@@ -4,16 +4,16 @@
       <div v-if="(typeof elem) == 'object'">
         <RecursiveComponent recursion :content="elem"/>
       </div>
-      <div class="outline" v-else>{{ `${index}: ${elem}` }}</div>
+      <div v-else class="outline">{{ `${index}: ${elem}` }}</div>
     </div>
   </div>
 </template>
 
 <script setup>
-const props = defineProps({
-  content: {
-    type: Object,
-    defult: {}
-  }
-});
+  defineProps({
+    content: {
+      type: Object,
+      defult: {}
+    }
+  });
 </script>

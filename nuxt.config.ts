@@ -6,7 +6,8 @@ export default defineNuxtConfig({
   srcDir: './src',
 
   typescript: {
-    typeCheck: true
+    typeCheck: true,
+    strict: true,
   },
 
   postcss: {
@@ -16,5 +17,5 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/eslint'],
 })

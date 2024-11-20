@@ -2,7 +2,7 @@
   <div class="p-6">
     <h1>Nuxt Routing set up successfully!</h1>
     <p>Current route: {{ route.path }}</p>
-    <br/>
+    <br>
     <p>
       <NuxtLink class="link link-primary" to="/">To home page</NuxtLink>
     </p>
@@ -13,7 +13,7 @@
 </template>
 
 <script setup>
-import TestComponent from '~/components/TestComponent.vue';
-import TestComponentHtml from '~/components/TestComponentHtml.vue';
-const route = useRoute();
+  import TestComponent from '~/components/TestComponent.vue';
+  import TestComponentHtml from '~/components/TestComponentHtml.vue';
+  const route = useRoute();
 </script>

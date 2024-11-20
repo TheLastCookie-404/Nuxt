@@ -3,9 +3,9 @@
     <NuxtRouteAnnouncer />
     <NuxtWelcome v-if="nuxtWelcomOpen" />
     <button 
-      @click="nuxtWelcomOpen = false" 
       v-if="nuxtWelcomOpen" 
-      class="btn btn-sm fixed top-6 right-6">Close</button>
+      class="btn btn-sm fixed top-6 right-6" 
+      @click="nuxtWelcomOpen = false">Close</button>
     
     <div v-else>
       <div class="navbar bg-base-200">

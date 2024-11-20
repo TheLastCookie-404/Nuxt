@@ -9,20 +9,20 @@
 </template>
 
 <script setup>
-import RecursiveComponent from '~/components/RecursiveComponent.vue'
-const props = defineProps({
-  lol: {
-    type: Object,
-    required: false
-  }
-});
-const obj = {
-  "lol": {
-    1: "kek",
-    "omg": {
-      "oof": [1, 64, 34],
-      "joe": "azaza"
+  import RecursiveComponent from '~/components/RecursiveComponent.vue';
+  defineProps({
+    lol: {
+      type: Object,
+      required: false
     }
-  }
-};
+  });
+  const obj = {
+    "lol": {
+      1: "kek",
+      "omg": {
+        "oof": [1, 64, 34],
+        "joe": "azaza"
+      }
+    }
+  };
 </script>

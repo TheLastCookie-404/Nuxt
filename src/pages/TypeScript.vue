@@ -7,12 +7,10 @@
       <NuxtLink class="link link-primary" to="/">To home page</NuxtLink>
     </p>
     <br>
-    <div>{{ lol }}</div>
-    <button class="btn" @click="lol++">Click</button>
+    <TypescriptDataTypesAndFunctions />
   </div> 
 </template>
 
 <script setup lang="ts">
   const route = useRoute();
-  const lol = ref(0);
 </script>

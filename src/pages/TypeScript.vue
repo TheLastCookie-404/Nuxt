@@ -7,7 +7,7 @@
       <NuxtLink class="link link-primary" to="/">To home page</NuxtLink>
     </p>
     <br>
-    <TypescriptDataTypesAndFunctions />
+    <TypescriptDataTypes />
   </div> 
 </template>
 

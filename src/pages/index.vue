@@ -12,6 +12,8 @@
       <NuxtLink class="link link-primary" to="/options">To Options</NuxtLink>
       <br>
       <NuxtLink class="link link-primary" to="/typescript">To TypeScript</NuxtLink>
+      <br>
+      <NuxtLink class="link link-primary" to="/slots">To Slots</NuxtLink>
     </p>
   </div>
 </template>

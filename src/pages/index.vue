@@ -15,10 +15,13 @@
       <br>
       <NuxtLink class="link link-primary" to="/slots">To Slots</NuxtLink>
     </p>
+    <br>
+    <img class="w-10 h-10" :src="`/${imgPath}`" >
   </div>
 </template>
 
 <script setup>
   const route = useRoute();
+  const imgPath = 'arasaka.png';
 </script>
 

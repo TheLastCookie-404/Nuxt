@@ -2,7 +2,14 @@
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   css: ['~/assets/css/main.css'],
-  devtools: { enabled: true },
+  modules: ['@nuxtjs/tailwindcss', '@nuxt/eslint', '@nuxt/image'],
+  devtools: {
+    enabled: true,
+
+    timeline: {
+      enabled: true,
+    },
+  },
   srcDir: './src',
 
   typescript: {
@@ -17,5 +24,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/eslint'],
+  image: {
+    
+  }
 })

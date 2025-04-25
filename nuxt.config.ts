@@ -1,21 +1,13 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-04-03',
-  css: ['~/assets/css/main.css'],
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/eslint', '@nuxt/image'],
-  devtools: {
-    enabled: true,
-
-    timeline: {
-      enabled: true,
-    },
+  compatibilityDate: "2024-04-03",
+  modules: ["@nuxtjs/tailwindcss", "@nuxt/eslint", "@nuxt/image"],
+  build: {
+    transpile: ["nuxt-trpc"],
   },
-  srcDir: './src',
+  devtools: { enabled: true },
 
-  typescript: {
-    typeCheck: true,
-    strict: true,
-  },
+  css: ["~/assets/css/main.css"],
 
   postcss: {
     plugins: {
@@ -24,7 +16,8 @@ export default defineNuxtConfig({
     },
   },
 
-  image: {
-    
-  }
-})
+  typescript: {
+    typeCheck: true,
+    strict: true,
+  },
+});

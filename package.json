@@ -15,6 +15,7 @@
     "@trpc/client": "^11.1.1",
     "@trpc/server": "^11.1.1",
     "nuxt": "^3.13.0",
+    "nuxt-mongoose": "^1.0.6",
     "trpc-nuxt": "^1.0.5",
     "vite-tsconfig-paths": "^5.1.4",
     "vue": "latest",

@@ -1,7 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
-  modules: ["@nuxtjs/tailwindcss", "@nuxt/eslint", "@nuxt/image"],
+  modules: [
+    "@nuxtjs/tailwindcss",
+    "@nuxt/eslint",
+    "@nuxt/image",
+    "nuxt-mongoose",
+  ],
   build: {
     transpile: ["nuxt-trpc"],
   },
@@ -21,10 +26,10 @@ export default defineNuxtConfig({
     strict: true,
   },
 
-  // mongoose: {
-  //   uri: process.env.MONGODB_URI,
-  //   options: {},
-  //   modelsDir: "models",
-  //   devtools: true,
-  // },
+  mongoose: {
+    uri: process.env.MONGODB_URI,
+    options: {},
+    modelsDir: "models",
+    devtools: true,
+  },
 });

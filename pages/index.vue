@@ -16,6 +16,8 @@
       <NuxtLink class="link link-primary" to="/slots">To Slots</NuxtLink>
       <br />
       <NuxtLink class="link link-primary" to="/trpctest">To Trpc</NuxtLink>
+      <br />
+      <NuxtLink class="link link-primary" to="/scrollanimate">To Scroll animate</NuxtLink>
     </p>
     <br />
     <img class="w-10 h-10" :src="`/${imgPath}`" />

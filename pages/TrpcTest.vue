@@ -7,7 +7,8 @@
 
 <script setup lang="ts">
   const { $trpc } = useNuxtApp();
+  const { helloRouter, testRouter } = $trpc;
 
-  const { data: hello } = await $trpc.hello.useQuery({ text: "kek" });
-  const { data: test } = await $trpc.test.useQuery({ text: "lol" });
+  const { data: hello } = await helloRouter.hello.useQuery({ text: "kek" });
+  const { data: test } = await testRouter.test.useQuery({ text: "lol" });
 </script>

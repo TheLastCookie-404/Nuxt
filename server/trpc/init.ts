@@ -5,7 +5,7 @@ export const createTRPCContext = async (event: H3Event) => {
   return { auth: event.context.auth };
 };
 
-const trpc = initTRPC.create();
+const trpc = initTRPC.context().create();
 
 export const createTRPCRouter = trpc.router;
 export const createCallerFactory = trpc.createCallerFactory;

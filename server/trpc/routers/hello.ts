@@ -1,7 +1,7 @@
 import { baseProcedure, createTRPCRouter } from "~/server/trpc/trpc";
 import { z } from "zod";
 
-const helloRouter = createTRPCRouter({
+export const helloRouter = createTRPCRouter({
   hello: baseProcedure
     .input(
       z.object({
@@ -14,5 +14,3 @@ const helloRouter = createTRPCRouter({
       };
     }),
 });
-
-export default helloRouter;
